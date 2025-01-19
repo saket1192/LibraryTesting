@@ -9,6 +9,7 @@ pluginManagement {
         }
         mavenCentral()
         gradlePluginPortal()
+
     }
 }
 dependencyResolutionManagement {
@@ -16,6 +17,13 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven {
+            url = uri("https://maven.pkg.github.com/saket1192/LibraryTesting")
+            credentials {
+                username = "saket1192"
+                password = "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"
+            }
+        }
     }
 }
 
